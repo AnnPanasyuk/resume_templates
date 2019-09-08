@@ -3,41 +3,43 @@ name:
   first: John
   middle:
   last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+about: Hi, my name is Ann Panasyuk.
+  I really like my work, and I'm ready to study the world of web programming.
+  My main goal is to make finding and reading information convenient, fast and pleasant.
+position: Frontend Developer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1999
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: Global Tech Makers
+  position: Frontend developer
+  timeperiod: since October 2018
+  description: Develop components of varying complexity on Angular,
+  analysis and update of existing solutions, code testing
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: Prize Solutions
+  position: HTML/CSS developer
+  timeperiod: May 2018 - Jule 2015
+  description: Online magazine layout, wordpress.
 
 - company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+  position: HTML/CSS developer
+  timeperiod: September 2017 - April 2018
+  description: Landing pages layout.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: PHP developer in Odesa Hillel
+  timeperiod: December 2017 - April 2017
+  description: Learning PHP language and laravel framework.
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Frontend trainee
+  timeperiod: December 2016 - May 2016
+  description: Development of a map and site for her. Learning the git and working with Linux.
+
+- degree: PHP developer in Odesa Hillel
+  timeperiod: December 2017 - April 2017
+  description: Learning PHP language and laravel framework.
 
 # skill level goes 0 to 100
 skills:
