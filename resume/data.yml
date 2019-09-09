@@ -1,8 +1,8 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Ann
   middle:
-  last: Doe
+  last: Panasyuk
 about: Hi, my name is Ann Panasyuk.
   I really like my work, and I'm ready to study the world of web programming.
   My main goal is to make finding and reading information convenient, fast and pleasant.
@@ -12,26 +12,25 @@ birth:
   year: 1999
 
 experience:
-- company: Global Tech Makers
+- company: Global Tech Makers in Lviv
   position: Frontend developer
   timeperiod: since October 2018
-  description: Develop components of varying complexity on Angular,
-  analysis and update of existing solutions, code testing
+  description: Develop components of varying complexity on Angular, analysis and update of existing solutions, code testing
 
-- company: Prize Solutions
+- company: Prize Solutions in Odessa
   position: HTML/CSS developer
   timeperiod: May 2018 - Jule 2015
   description: Online magazine layout, wordpress.
 
-- company: Company C
+- company: Web studio in Odessa
   position: HTML/CSS developer
   timeperiod: September 2017 - April 2018
   description: Landing pages layout.
 
 education:
-- degree: PHP developer in Odesa Hillel
-  timeperiod: December 2017 - April 2017
-  description: Learning PHP language and laravel framework.
+- degree: Bachelor of Software Engineering
+  timeperiod: Since September 2016
+  description: Odessa National Polytechnic University
 
 - degree: Frontend trainee
   timeperiod: December 2016 - May 2016
@@ -44,51 +43,23 @@ education:
 # skill level goes 0 to 100
 skills:
 - name: HTML5
-  level: 99
 - name: CSS3
-  level: 95
+- name: Sass
 - name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
 - name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
+- name: Angular 2
+- name: Ngrx
+- name: PHP
+- name: SQL
+- name: Laravel
 - name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
-
-projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
-
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+knowledge: English (Pre-Intermediate)
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: panasyuk20anna@gmail.com
+  phone: +380 98 86 03 126
+  city: Khmelnitsky, Lviv, Odessa
+  github: AnnPanasyuk
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `

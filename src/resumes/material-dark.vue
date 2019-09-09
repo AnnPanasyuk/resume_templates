@@ -75,19 +75,23 @@
       </div>
     </a>
 
-    <div class="item last">
+    <div class="item">
       <div class="section-headline">
         {{ lang.skills }}
       </div>
       <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right">
           <span>{{skill.name}}&nbsp;</span>
-          <div class="progress">
-            <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="item last">
+      <div class="section-headline">
+        Language
+      </div>
+      <div class="text language">
+        {{ person.knowledge }}
       </div>
     </div>
   </div>
@@ -437,6 +441,10 @@ h4 {
     border-bottom-style:none;
     padding-bottom:0;
   }
+  .item.last .language {
+    float: left;
+    padding-left: 7%;
+  }
 }
 #myselfpic {
   background-image:url('../../resume/id.jpg');
@@ -446,4 +454,5 @@ h4 {
   width:25px;
   padding-left:17px;
 }
+
 </style>
