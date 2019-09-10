@@ -109,8 +109,9 @@
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
+      <div class="subheadline">{{education.timeperiod}}</div>
       <p class="info">
-        {{education.timeperiod}}, {{education.description}}
+        {{education.description}}
       </p>
     </div>
   </div>
