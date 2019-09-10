@@ -28,7 +28,7 @@ experience:
   description: Landing pages layout.
 
 education:
-- degree: Bachelor of Software Engineering
+- degree: Student of Software Engineering
   timeperiod: Since September 2016
   description: Odessa National Polytechnic University
 
@@ -42,13 +42,13 @@ education:
 
 # skill level goes 0 to 100
 skills:
+- name: TypeScript
+- name: JavaScript
+- name: Angular 2 - 8
+- name: Ngrx
 - name: HTML5
 - name: CSS3
 - name: Sass
-- name: JavaScript
-- name: TypeScript
-- name: Angular 2
-- name: Ngrx
 - name: PHP
 - name: SQL
 - name: Laravel

@@ -4,94 +4,88 @@
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">
     </div>
-    <div class="section-headline">
-      {{ lang.contact }}
-    </div>
-    <div v-if="person.birth" class="item">
-      <div class="icon">
-        <i class="material-icons">account_circle</i>
-      </div>
-      <div class="text">
-        <ul>
-          <li> {{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="item">
-      <div class="icon">
-        <i class="material-icons">location_city</i>
-      </div>
-      <div class="text">
-        <ul>
-          <li>{{person.contact.street}}</li>
-          <li>{{person.contact.city}}</li>
-        </ul>
-      </div>
-    </div>
+    <div class="left-info">
+      <div class="contact">
+        <div class="section-headline contact-headline">
+          {{ lang.contact }}
+        </div>
+        <div v-if="person.birth" class="item">
+          <div class="icon">
+            <i class="material-icons">account_circle</i>
+          </div>
+          <div class="text">
+            <ul>
+              <li> {{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</li>
+            </ul>
+          </div>
+        </div>
 
-    <a :href="contactLinks.phone">
+        <div class="item">
+          <div class="icon">
+            <i class="material-icons">location_city</i>
+          </div>
+          <div class="text">
+            <ul>
+              <li>{{person.contact.street}}</li>
+              <li>{{person.contact.city}}</li>
+            </ul>
+          </div>
+        </div>
+
+        <a :href="contactLinks.phone">
+          <div class="item">
+            <div class="icon">
+              <i class="material-icons">phone</i>
+            </div>
+            <div class="text">
+              {{person.contact.phone}}
+            </div>
+          </div>
+        </a>
+
+        <a :href="contactLinks.email">
+          <div class="item">
+            <div class="icon">
+              <i class="material-icons">email</i>
+            </div>
+            <div class="text">
+              {{person.contact.email}}
+            </div>
+          </div>
+        </a>
+
+        <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
+          <div class="item">
+            <div class="icon">
+              <i class="fa fa-github"></i>
+            </div>
+            <div class="text">
+              <span>github.com/{{person.contact.github}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
       <div class="item">
-        <div class="icon">
-          <i class="material-icons">phone</i>
+        <div class="section-headline">
+          {{ lang.skills }}
         </div>
-        <div class="text">
-          {{person.contact.phone}}
+        <div class="skill" v-for="skill in person.skills" :key="skill.name">
+          <div class="right">
+            <span>{{skill.name}}&nbsp;</span>
+          </div>
         </div>
       </div>
-    </a>
 
-    <a :href="contactLinks.email">
-      <div class="item">
-        <div class="icon">
-          <i class="material-icons">email</i>
+      <div class="item last">
+        <div class="section-headline">
+          Language
         </div>
-        <div class="text">
-          {{person.contact.email}}
+        <div class="text language">
+          {{ person.knowledge }}
         </div>
-      </div>
-    </a>
-
-    <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
-      <div class="item">
-        <div class="icon">
-          <i class="fa fa-github"></i>
-        </div>
-        <div class="text">
-          <span>@{{person.contact.github}}</span>
-          <span>github.com/{{person.contact.github}}</span>
-        </div>
-      </div>
-    </a>
-
-    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
-      <div class="item">
-        <div class="icon">
-          <i class="material-icons">language</i>
-        </div>
-        <div class="text">
-          <span>{{person.contact.website}}</span>
-        </div>
-      </div>
-    </a>
-
-    <div class="item">
-      <div class="section-headline">
-        {{ lang.skills }}
-      </div>
-      <div class="skill" v-for="skill in person.skills" :key="skill.name">
-        <div class="right">
-          <span>{{skill.name}}&nbsp;</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="item last">
-      <div class="section-headline">
-        Language
-      </div>
-      <div class="text language">
-        {{ person.knowledge }}
       </div>
     </div>
   </div>
@@ -137,7 +131,7 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 .resume {
   font-family:'Roboto' !important;
-  background:#cccccc;
+  background:#86B1F1;
 }
 a {
   cursor:pointer;
@@ -159,36 +153,27 @@ a {
     display:block;
     font-size:1.17em;
     -webkit-margin-before:1em;
-    -webkit-margin-after:1em;
+    -webkit-margin-after:.5em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
-    color:white;
-    color:rgba(0,0,0,0.7);
+    color:#090E16;
     padding-top:0;
     margin-top:0;
-    letter-spacing:10px;
+    letter-spacing: 7px;
     font-weight:400;
   }
   div {
-    margin-top:-5px;
-    margin-top:0;
     margin:0;
     padding:0;
     line-height:15pt;
-    font-weight:300;
     font-weight:500;
-    letter-spacing:2px;
     letter-spacing:3px;
-    color:white;
-    color:#16151c;
-    color:rgba(63,61,60,0.71);
+    color:#090E16;
     display:block;
-    font-size:0.67em;
-    font-size:10pt;
-    -webkit-margin-before:2.33em;
+    font-size:11pt;
+    -webkit-margin-before:0em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
-    padding-top:0;
     text-transform:uppercase;
     opacity:0.8;
   }
@@ -202,7 +187,7 @@ a {
   margin-left:20px;
   margin-top:40px;
   margin-bottom:20px;
-  color:#3f3d3c;
+  color:#111C2C;
 }
 .c {
   clear:both;
@@ -276,10 +261,10 @@ h4 {
       font-weight:300;
       display:block;
       font-size:15px;
-      color:rgba(0,0,0,0.870588);
+      color:#090E16;
     }
     .subheadline {
-      color:rgba(0,0,0,0.541176);
+      color:#213757;
       display:block;
       font-size:14px;
       font-weight:300;
@@ -341,13 +326,11 @@ h4 {
   float:left;
   padding:0;
   text-align:left;
-  color:#ffffff;
   color:rgba(255,255,255,0.59);
-  background-color:#16151c;
   overflow:hidden;
   display:block;
   .section-headline {
-    color:rgba(255,255,255,0.54);
+    color: #EFF5FD;
   }
   a {
     color:rgba(255,255,255,0.59);
@@ -362,10 +345,26 @@ h4 {
     width:100%;
     height:277px;
   }
+  .left-info {
+    background-color:#213757;
+    width: 100%;
+    padding: 40px 0 0;
+    height: 100%;
+  }
+  .contact {
+    .item {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .contact-headline {
+    margin-top: 0;
+  }
   .item {
     width:100%;
     margin-top:13px;
     float:left;
+    color: #D1E2FA;
     .fa, .material-icons {
       display:inherit;
       text-align:center;
