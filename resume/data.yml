@@ -19,10 +19,10 @@ experience:
 
 - company: Prize Solutions in Odessa
   position: HTML/CSS developer
-  timeperiod: May 2018 - Jule 2015
+  timeperiod: May 2018 - Jule 2018
   description: Online magazine layout, wordpress.
 
-- company: Web studio in Odessa
+- company: UniverMag in Odessa
   position: HTML/CSS developer
   timeperiod: September 2017 - April 2018
   description: Landing pages layout.
@@ -33,7 +33,7 @@ education:
   description: Odessa National Polytechnic University
 
 - degree: Frontend trainee
-  timeperiod: December 2016 - May 2016
+  timeperiod: December 2016 - May 2017
   description: Development of a map and site for it. Learning the git and working with Linux.
 
 - degree: PHP developer in Odesa Hillel
