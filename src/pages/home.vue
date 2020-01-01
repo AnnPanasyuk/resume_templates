@@ -15,6 +15,14 @@
       </router-link>
     </div>
     <div class="preview">
+      <router-link v-bind:to="'/resume/material-black'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-material-dark.png" />
+          <span>material-black</span>
+        </div>
+      </router-link>
+    </div>
+    <div class="preview">
       <router-link v-bind:to="'/resume/left-right'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-left-right.png" />

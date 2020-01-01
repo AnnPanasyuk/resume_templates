@@ -65,6 +65,17 @@
             </div>
           </div>
         </a>
+
+        <a v-if="person.contact.linkedin" :href="contactLinks.linkedin" target="_blank">
+          <div class="item">
+            <div class="icon">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="text">
+              <span>{{person.contact.linkedin}}</span>
+            </div>
+          </div>
+        </a>
       </div>
 
 
@@ -72,19 +83,21 @@
         <div class="section-headline">
           {{ lang.skills }}
         </div>
-        <div class="skill" v-for="skill in person.skills" :key="skill.name">
+        <div class="skill" v-for="skill in person.softSkills" :key="skill.name">
           <div class="right">
-            <span>{{skill.name}}&nbsp;</span>
+            <span>- {{skill.name}}&nbsp;</span>
           </div>
         </div>
       </div>
 
       <div class="item last">
         <div class="section-headline">
-          Language
+          Languages
         </div>
-        <div class="text language">
-          {{ person.knowledge }}
+        <div class="text language" v-for="language in person.languages" :key="language.item">
+          <span class="language-item">
+            - {{ language.item }}
+          </span>
         </div>
       </div>
     </div>
@@ -96,14 +109,10 @@
       <div>{{person.position}}</div>
     </div>
 
-    <div class="section-headline">{{ lang.experience }}</div>
-    <div class="block" v-for="experience in person.experience" :key="experience.company">
+    <div class="section-headline">{{ lang.professional_skills }}</div>
+    <div class="block" v-for="skill in person.skills" :key="skill.name">
       <div class="block-helper"></div>
-      <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
-        <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
+      <h3 class="headline">{{skill.name}}</h3>
     </div>
     <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
@@ -132,7 +141,7 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 .resume {
   font-family:'Roboto' !important;
-  background:#86B1F1;
+  background: #DB6D4A;
 }
 a {
   cursor:pointer;
@@ -157,7 +166,7 @@ a {
     -webkit-margin-after:.5em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
-    color:#090E16;
+    color: #160B08;
     padding-top:0;
     margin-top:0;
     letter-spacing: 7px;
@@ -169,9 +178,9 @@ a {
     line-height:15pt;
     font-weight:500;
     letter-spacing:3px;
-    color:#090E16;
+    color: #160B08;
     display:block;
-    font-size:11pt;
+    font-size:14pt;
     -webkit-margin-before:0em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
@@ -188,7 +197,7 @@ a {
   margin-left:20px;
   margin-top:40px;
   margin-bottom:20px;
-  color:#111C2C;
+  color: #2C160F;
 }
 .c {
   clear:both;
@@ -257,22 +266,22 @@ h4 {
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 #582C1E, 0 2px 10px 0;
     .headline {
       font-weight:300;
       display:block;
       font-size:15px;
-      color:#090E16;
+      color: #160B08;
     }
     .subheadline {
-      color:#213757;
+      color: #2C160F;
       display:block;
       font-size:14px;
       font-weight:300;
     }
     .info {
       font-size:14px;
-      color:rgba(0,0,0,0.870588);
+      color: #160B08;
       margin-bottom:0;
       padding-top:20px;
     }
@@ -331,7 +340,7 @@ h4 {
   overflow:hidden;
   display:block;
   .section-headline {
-    color: #EFF5FD;
+    color: #FDF2EF;
   }
   a {
     color:rgba(255,255,255,0.59);
@@ -347,7 +356,7 @@ h4 {
     height:277px;
   }
   .left-info {
-    background-color:#213757;
+    background-color: #83412D;
     width: 100%;
     padding: 40px 0 0;
     height: 100%;
@@ -365,7 +374,7 @@ h4 {
     width:100%;
     margin-top:13px;
     float:left;
-    color: #D1E2FA;
+    color: #FDF2EF;
     .fa, .material-icons {
       display:inherit;
       text-align:center;
@@ -444,6 +453,10 @@ h4 {
   .item.last .language {
     float: left;
     padding-left: 7%;
+    .language-item {
+      display: block;
+      padding-bottom: 4px;
+    }
   }
 }
 #myselfpic {

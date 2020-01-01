@@ -2,11 +2,9 @@
 name:
   first: Ann
   middle:
-  last: Panasyuk
-about: Hi, my name is Ann Panasyuk.
-  I really like my work, and I'm ready to study the world of web programming.
-  My main goal is to make finding and reading information convenient, fast and pleasant.
-position: Frontend Developer
+  last: Ududenko
+about: ''
+position: IT Recruiter / HR
 
 birth:
   year: 1999
@@ -28,38 +26,39 @@ experience:
   description: Landing pages layout.
 
 education:
-- degree: Student of Software Engineering
-  timeperiod: Since September 2016
-  description: Odessa National Polytechnic University
+- degree: Bachelor of Hydrometeorology
+  timeperiod: September 2016 - May 2020
+  description: Odessa State Environmental University
 
-- degree: Frontend trainee
-  timeperiod: December 2016 - May 2017
-  description: Development of a map and site for it. Learning the git and working with Linux.
-
-- degree: PHP developer in Odesa Hillel
-  timeperiod: December 2017 - April 2018
-  description: Learning PHP language and laravel framework.
+- degree: IT Recruiter / HR
+  timeperiod: September 2019 - January 2020
+  description: Hillel Computer School
 
 # skill level goes 0 to 100
 skills:
-- name: TypeScript
-- name: JavaScript
-- name: Angular 2 - 8
-- name: Ngrx
-- name: HTML5
-- name: CSS3
-- name: Sass
-- name: PHP
-- name: SQL
-- name: Laravel
-- name: Docker
-knowledge: English (Pre-Intermediate)
+  - name: Ability to use X-Ray, Boolean search
+  - name: Job posting
+  - name: Evaluation and analysis of selected resumes
+  - name: Knowledge of company- and self-introduction techniques
+  - name: Communication and retention of the candidate at various stages of recruiting
+knowledge: ''
+languages:
+  - item: English (Intermediate)
+  - item:  Russian (native)
+  - item:  Ukrainian (fluency)
+softSkills:
+  - name: sociability
+  - name: responsibility
+  - name: stress resistance
+  - name: perseverance
+  - name: determination
+  - name: high performance
 
 contact:
-  email: panasyuk20anna@gmail.com
-  phone: +380 98 86 03 126
-  city: Khmelnitsky, Lviv, Odessa
-  github: AnnPanasyuk
+  email: annududod@gmail.com
+  phone: +380 68 37 57 832
+  city: Odessa
+  linkedin: anna-ududenko-05a45b194
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
