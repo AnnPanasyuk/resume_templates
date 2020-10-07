@@ -109,19 +109,30 @@
       <div>{{person.position}}</div>
     </div>
 
-    <div class="section-headline">{{ lang.professional_skills }}</div>
-    <div class="block" v-for="skill in person.skills" :key="skill.name">
+    <div class="section-headline">{{ lang.experience }}</div>
+    <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
-      <h3 class="headline">{{skill.name}}</h3>
+      <div class="headline caption">{{experience.position}}</div>
+      <div class="subheadline">{{experience.timeperiod}}</div>
+      <p class="info">
+        {{experience.description}}
+      </p>
     </div>
+
     <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
-      <div class="headline">{{education.degree}}</div>
+      <div class="headline caption">{{education.degree}}</div>
       <div class="subheadline">{{education.timeperiod}}</div>
       <p class="info">
         {{education.description}}
       </p>
+    </div>
+
+    <div class="section-headline">{{ lang.professional_skills }}</div>
+    <div class="block" v-for="skill in person.skills" :key="skill.name">
+      <div class="block-helper"></div>
+      <h3 class="headline">{{skill.name}}</h3>
     </div>
   </div>
 
@@ -259,10 +270,10 @@ h4 {
   display:flex;
   flex-direction:column;
   .block {
-    width:90%;
+    width: 93%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
+    padding:12px;
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
@@ -272,6 +283,9 @@ h4 {
       display:block;
       font-size:15px;
       color: #160B08;
+    }
+    .headline.caption {
+      font-weight:400;
     }
     .subheadline {
       color: #2C160F;

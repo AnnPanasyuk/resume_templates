@@ -10,29 +10,27 @@ birth:
   year: 1999
 
 experience:
-- company: Global Tech Makers in Lviv
-  position: Frontend developer
-  timeperiod: since October 2018
-  description: Development of components of various complexity on Angular, analysis and update of existing solutions, code testing.
-
-- company: Prize Solutions in Odessa
-  position: HTML/CSS developer
-  timeperiod: May 2018 - Jule 2018
-  description: Online magazine layout, wordpress.
-
-- company: UniverMag in Odessa
-  position: HTML/CSS developer
-  timeperiod: September 2017 - April 2018
-  description: Landing pages layout.
+- company: Grape Up
+  position: Researcher
+  timeperiod: Fabruary 2020 - March 2020
+  description: I have hired Ukrainian specialists to relocate to Polan and work with cloud-native platform and as Devops
 
 education:
 - degree: Bachelor of Hydrometeorology
   timeperiod: September 2016 - May 2020
   description: Odessa State Environmental University
 
+- degree: Mater of Hydrology
+  timeperiod: September 2020 - present
+  description: Odessa State Environmental University
+
 - degree: IT Recruiter / HR
   timeperiod: September 2019 - January 2020
   description: Hillel Computer School
+
+- degree: Copywriter
+  timeperiod: April 2020 - May 2020
+  description: Sila slova. Copywriting
 
 # skill level goes 0 to 100
 skills:
@@ -44,8 +42,8 @@ skills:
 knowledge: ''
 languages:
   - item: English (olsc intermediate)
-  - item:  Russian (native)
-  - item:  Ukrainian (fluency)
+  - item: Russian (native)
+  - item: Ukrainian (fluency)
 softSkills:
   - name: sociability
   - name: responsibility
@@ -57,7 +55,7 @@ softSkills:
 contact:
   email: annaududenko@gmail.com
   phone: +380 68 37 57 832
-  city: Odessa
+  city: Lviv
   linkedin: anna-ududenko-05a45b194
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
