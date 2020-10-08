@@ -13,14 +13,14 @@ experience:
 - company: Grape Up
   position: Researcher
   timeperiod: Fabruary 2020 - March 2020
-  description: I have hired Ukrainian specialists to relocate to Polan and work with cloud-native platform and as Devops
+  description: I have hired Ukrainian specialists to work with cloud-native platform and as Devops with relocate to Polan
 
 education:
 - degree: Bachelor of Hydrometeorology
   timeperiod: September 2016 - May 2020
   description: Odessa State Environmental University
 
-- degree: Mater of Hydrology
+- degree: Master of Hydrology
   timeperiod: September 2020 - present
   description: Odessa State Environmental University
 
@@ -55,7 +55,7 @@ softSkills:
 contact:
   email: annaududenko@gmail.com
   phone: +380 68 37 57 832
-  city: Lviv
+  city: Lviv, Kyiv
   linkedin: anna-ududenko-05a45b194
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en

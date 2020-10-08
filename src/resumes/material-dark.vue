@@ -180,6 +180,7 @@ a {
     color: #160B08;
     padding-top:0;
     margin-top:0;
+    margin-bottom:0;
     letter-spacing: 7px;
     font-weight:400;
   }
@@ -206,8 +207,8 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:40px;
-  margin-bottom:20px;
+  margin-top:24px;
+  margin-bottom:12px;
   color: #2C160F;
 }
 .c {
