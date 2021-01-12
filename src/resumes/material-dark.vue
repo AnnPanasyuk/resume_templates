@@ -76,8 +76,29 @@
             </div>
           </div>
         </a>
+
+        <a v-if="person.contact.skype" href="https://join.skype.com/invite/hKfouIKMtlAp" target="_blank">
+          <div class="item">
+            <div class="icon">
+              <i class="fa fa-skype"></i>
+            </div>
+            <div class="text">
+              <span>{{person.contact.skype}}</span>
+            </div>
+          </div>
+        </a>
       </div>
 
+      <div class="item">
+        <div class="section-headline">
+          {{ lang.professional_skills }}
+        </div>
+        <div class="skill" v-for="skill in person.skills" :key="skill.name">
+          <div class="right">
+            <span>- {{skill.name}}&nbsp;</span>
+          </div>
+        </div>
+      </div>
 
       <div class="item">
         <div class="section-headline">
@@ -112,11 +133,13 @@
     <div class="section-headline">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
-      <div class="headline caption">{{experience.position}}</div>
+      <div class="headline caption">{{experience.position}} at {{experience.company}}</div>
       <div class="subheadline">{{experience.timeperiod}}</div>
-      <p class="info">
-        {{experience.description}}
-      </p>
+      <ul>
+        <li class="list-item-info" v-for="item in experience.description" :key="item.name">
+          - {{item.name}}
+        </li>
+      </ul>
     </div>
 
     <div class="section-headline">{{ lang.education }}</div>
@@ -129,11 +152,11 @@
       </p>
     </div>
 
-    <div class="section-headline">{{ lang.professional_skills }}</div>
-    <div class="block" v-for="skill in person.skills" :key="skill.name">
-      <div class="block-helper"></div>
-      <h3 class="headline">{{skill.name}}</h3>
-    </div>
+<!--    <div class="section-headline">{{ lang.professional_skills }}</div>-->
+<!--    <div class="block" v-for="skill in person.skills" :key="skill.name">-->
+<!--      <div class="block-helper"></div>-->
+<!--      <h3 class="headline">{{skill.name}}</h3>-->
+<!--    </div>-->
   </div>
 
   <div style="clear:both;"></div>
@@ -172,6 +195,7 @@ a {
   h2 {
     text-transform:uppercase;
     display:block;
+    line-height: 36px;
     font-size:1.17em;
     -webkit-margin-before:1em;
     -webkit-margin-after:.5em;
@@ -180,12 +204,12 @@ a {
     color: #160B08;
     padding-top:0;
     margin-top:0;
-    margin-bottom:0;
+    margin-bottom: 0;
     letter-spacing: 7px;
     font-weight:400;
   }
   div {
-    margin:0;
+    margin: 0;
     padding:0;
     line-height:15pt;
     font-weight:500;
@@ -207,8 +231,8 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:24px;
-  margin-bottom:12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
   color: #2C160F;
 }
 .c {
@@ -300,6 +324,13 @@ h4 {
       margin-bottom:0;
       padding-top:20px;
     }
+    .list-item-info {
+      padding-top: 6px;
+      font-size:14px;
+      color: #160B08;
+      margin-bottom:0;
+      font-weight: 300;
+    }
     .icon {
       width:16%;
       float:left;
@@ -356,6 +387,8 @@ h4 {
   display:block;
   .section-headline {
     color: #FDF2EF;
+    margin-bottom: 6px;
+    margin-top: 24px;
   }
   a {
     color:rgba(255,255,255,0.59);
@@ -380,6 +413,7 @@ h4 {
     .item {
       display: flex;
       align-items: center;
+      margin-top: 6px;
     }
   }
   .contact-headline {
@@ -387,7 +421,7 @@ h4 {
   }
   .item {
     width:100%;
-    margin-top:13px;
+    margin-top: 4px;
     float:left;
     color: #FDF2EF;
     .fa, .material-icons {

@@ -4,16 +4,29 @@ name:
   middle:
   last: Ududenko
 about: ''
-position: IT Recruiter / HR
+position: Researcher / IT Recruiter
 
 birth:
   year: 1999
 
 experience:
 - company: Grape Up
-  position: Researcher
-  timeperiod: Fabruary 2020 - March 2020
-  description: I have hired Ukrainian specialists to work with cloud-native platform and as Devops with relocate to Polan
+  position: Recruitment Consultant
+  timeperiod: February 2020 - March 2020
+  description:
+  - name: searched for relevant profiles of candidates for Linkedin for the position of Java Cloud Developer with relocation to Poland;
+  - name: analysed of the profiles of candidates on Linkedin, their resume;
+  - name: keeped in touch with candidates throughout the entire recruiting process on Linkedin, Skype, etc.;
+  - name: coordinated and appointed of interviews.
+
+- company: HR Networke Club
+  position: Recruitment Consultant
+  timeperiod: October 2020 - present
+  description:
+    - name: search for profiles of candidates in different social networks (mainly in Linkedin) for different positions. Working with different clients in Ukraine, Europe and Asia;
+    - name: analysed of the profiles of candidates on Linkedin, their resume;
+    - name: keeped in touch with candidates throughout the entire recruiting process on Linkedin, Skype, etc.;
+    - name: coordinated and appointed of interviews.
 
 education:
 - degree: Bachelor of Hydrometeorology
@@ -30,33 +43,43 @@ education:
 
 - degree: Copywriter
   timeperiod: April 2020 - May 2020
-  description: Sila slova. Copywriting
+  description: Word Power. Copywriting.
 
-# skill level goes 0 to 100
+- degree: English Courses
+  timeperiod: October 2018 - June 2020
+  description: OLSC
+
 skills:
-  - name: Ability to use X-Ray, Boolean search
-  - name: Job posting
-  - name: Evaluation and analysis of selected resumes
-  - name: Knowledge of company- and self-introduction techniques
-  - name: Communication and retention of the candidate at various stages of recruiting
+  - name: x-ray search
+  - name: boolean searching
+  - name: soursing
+  - name: consulting
+  - name: staff recruitment
+  - name: negotiations
+  - name: build business communication
+
 knowledge: ''
 languages:
-  - item: English (olsc intermediate)
+  - item: English (intermediate)
   - item: Russian (native)
   - item: Ukrainian (fluency)
 softSkills:
+  - name: purposefulness
   - name: sociability
   - name: responsibility
   - name: stress resistance
   - name: perseverance
   - name: determination
   - name: high performance
+  - name: communication
+  - name: organization
 
 contact:
-  email: annaududenko@gmail.com
+  email: annaududenko99@gmail.com
   phone: +380 68 37 57 832
-  city: Lviv, Kyiv
+  city: Kyiv, remote
   linkedin: anna-ududenko-05a45b194
+  skype: live:.cid.1b0f13c81a2ba6ea
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
